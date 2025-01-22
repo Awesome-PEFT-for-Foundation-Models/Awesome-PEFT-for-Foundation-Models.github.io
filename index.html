@@ -165,11 +165,11 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              This survey delves into the realm of Parameter-Efficient Fine-Tuning (PEFT) within the context of Foundation Models (FMs).
-              PEFT, a cost-effective fine-tuning technique, minimizes parameters and computational complexity while striving for optimal downstream task performance. FMs, like ChatGPT, DALL-E, and LLaVA specialize in language understanding, generative tasks, and multimodal tasks, trained on diverse datasets spanning text, images, and videos.
-              The diversity of FMs guides various adaptation strategies for PEFT. Therefore, this survey aims to provide a comprehensive survey of PEFT techniques applied to diverse FMs, to address the critical gaps in understanding the techniques, trends, and applications.
+              This survey delves into the realm of Parameter-Efficient Fine-Tuning (PEFT) within the context of Foundation Models (FMs). 
+              PEFT, a cost-effective fine-tuning technique, minimizes parameters and computational complexity while striving for optimal downstream task performance. FMs, like ChatGPT, DALL-E, and LLaVA specialize in language understanding, generative tasks, and multimodal tasks, trained on diverse datasets spanning text, images, and videos. 
+              The diversity of FMs guides various adaptation strategies for PEFT. Therefore, this survey aims to provide a comprehensive overview of PEFT techniques applied to diverse FMs and address critical gaps in understanding the techniques, trends, and applications. 
               We start by providing a detailed development of FMs and PEFT. Subsequently, we systematically review the key categories and core mechanisms of PEFT across diverse FMs to offer a comprehensive understanding of trends. We also explore the most recent applications across various FMs to demonstrate the versatility of PEFT, shedding light on the integration of systematic PEFT methods with a range of FMs.
-              Furthermore, we identify potential research and development directions for improving PEFTs in the future. This survey provides a valuable resource for both novice and experienced researchers seeking to understand and use the power of PEFT across FMs.
+              Furthermore, we identify potential research and development directions for improving PEFTs in the future. This survey provides a valuable resource for both newcomers and experts seeking to understand and use the power of PEFT across FMs.
             </p>
 
           </div>
@@ -184,8 +184,8 @@
               <p style="text-align: center;">
                 <img class="center-block org-banner" src="static/images/trends.png" width="60%">
               </p>
-              <p style="text-align: center;"><strong>
-                Figure 1: An overview of trends in PEFT methods in various FMs (LLM, VFM, VLM, MFM, and VGM). The number of citations from Semantic Scholar serves as a trend indicator.
+              <p style="text-align: center;">
+                <strong>Figure 1: An overview of trends in PEFT methods in various FMs (LLM, VFM, VLM, MFM, and VGM). The number of citations from Semantic Scholar serves as a trend indicator.
               </p>
             </div>
           </div>
@@ -201,8 +201,8 @@
           <div class="content has-text-justified">
               <img class="center-block org-banner" src="static/images/overview.png">
             </a>
-            <p style="text-align: center;"><strong></strong>
-              Fig. 2: Left: Versatile scenarios and applications in the era of foundation model. Right: A detailed illustration of four common parameter-efficient fine-tuning methods (Additive, Selective, Reparameterization, and Prompt Fine-tuning).</strong>
+            <p style="text-align: center;"><strong>
+              Fig. 2: Left: Versatile scenarios and applications in the era of FMs. Right: A detailed illustration of four common PEFT methods (Selective, Additive, Prompt, and Reparameterization PEFT).</strong>
             </p>
           </div>
         </div>
@@ -217,13 +217,93 @@
           <div class="content has-text-justified">
               <img class="center-block org-banner" src="static/images/overview_methods.png">
             </a>
-            <p style="text-align: center;"><strong>Tab. 1: The overview of recent PEFT methods primarily comprises several elements: Approach, Venue, Modal, Category, SC (Structure Change), Changed Position (Block denotes FFN + Attention), IE (Inference Efficiency) Addition of Parameters, and the percentage of Trainable Parameters (where the “-” represents that the paper does not provide a clear percentage).</strong>
+            <p style="text-align: center;"><strong>Tab. 1: The overview of recent PEFT methods primarily comprises several elements: Approach, Venue, Modal of FMs, Category of PEFT, SC (Structure Change), Changed Position, IE (Inference Efficiency), Addition of Parameters, and the percentage of Trainable Parameters. Note that the "-" represents that the paper does not provide a clear result. </strong>
+            </p>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <section class="section">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="content has-text-justified">
+              <img class="center-block org-banner" src="static/images/adapter.png">
+            </a>
+            <p style="text-align: center;"><strong>
+              Fig. 3: Illustration of representative adapter PEFT across various FMs.</strong>
             </p>
           </div>
         </div>
       </div>
     </div>
   </section>
+   <section class="section">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="content has-text-justified">
+              <img class="center-block org-banner" src="static/images/prompt.png">
+            </a>
+            <p style="text-align: center;"><strong>
+              Fig. 4: Illustration of representative prompt PEFT across various FMs.</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+   <section class="section">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="content has-text-justified">
+              <img class="center-block org-banner" src="static/images/LoRA.png"style="width: 800px; height: 350px;">
+            </a>
+            <p style="text-align: center;"><strong>
+              Fig. 5: Illustration of representative groups of LoRA PEFT.</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+   <section class="section">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="content has-text-justified">
+              <img class="center-block org-banner" src="static/images/VGMs.png" style="width: 800px; height: 400px;">
+            </a>
+            <p style="text-align: center;"><strong>
+              Fig. 6: Prevailing PEFT in VGMs. A. Adapter tuning in diffusion model; B. LoRA tuning in diffusion model; C. Reward tuning in diffusion model.</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="section">
+    <div class="container">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Conclusion</h2>
+          <div class="content has-text-justified">
+            <p>In conclusion, the integration of PEFT with FMs showcases a promising avenue for efficient model adaptation across various tasks and domains. As highlighted in this survey, the rapid evolution of FMs and the active PEFT community underscore the importance of staying abreast of technological trends for optimal performance. By exploring adaptation strategies such as Selective, Additive, Prompt, Reparameterization, and Hybrid PEFT, and across different model structures (e.g., LLM, VFM, VLM, MFM, and VGM), this survey offers insights into enhancing efficiency and effectiveness. The survey emphasizes the need for a systematic understanding of PEFT techniques in the context of diverse FMs, paving the way for future advancements and applications in the field.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+
+  </section>
+
 
 
   <section class="section" id="BibTeX">
